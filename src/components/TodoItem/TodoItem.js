@@ -12,19 +12,19 @@ function TodoItem({ text, completed, priority, date, time, onComplete, onDelete 
             >
             </FontAwesomeIcon>
             <p className={`TodoItem-p ${completed && 'TodoItem-p--complete'}`}>
-                {text}
+                {text.toUpperCase()}
             </p>
             <p className={`TodoItem-p ${completed && 'TodoItem-p--complete'} 
             ${priority === 'baja' && 'TodoItem-p--low'} 
             ${priority === 'media' && 'TodoItem-p--mid'} 
             ${priority === 'alta' && 'TodoItem-p--high'}`}>
-                {priority}
+                {priority.toUpperCase()}
             </p>
             <p className={`TodoItem-p--date ${completed && 'TodoItem-p--complete'}`}>
                 {date}
             </p>
             <p className={`TodoItem-p--time ${completed && 'TodoItem-p--complete'}`}>
-                {time}
+                {time.toUpperCase()}
             </p>
             <FontAwesomeIcon
                 icon={faTimes}
