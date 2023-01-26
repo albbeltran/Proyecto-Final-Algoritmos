@@ -1,0 +1,13 @@
+ul {
+    margin: 0;
+    padding: 0 0 56px 0;
+    list-style: none;
+}
+
+.message {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #1E1E1F;
+    font-weight: 400;
+}
