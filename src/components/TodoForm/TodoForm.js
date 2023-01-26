@@ -33,6 +33,19 @@ const TodoForm = ({ addTask, setOpenModal }) => {
             alert("Whoops! No puedes dejar campos vacíos.");
             return;
         }
+
+        if (priority.toLocaleLowerCase() !== 'baja'
+        && priority.toLocaleLowerCase() !== 'media'
+        && priority.toLocaleLowerCase() !== 'alta') {
+            alert("Whoops! Selecciona una prioridad correcta.");
+            return;
+        }
+
+        if (date.length != 10) {
+            alert("Whoops! Selecciona una fecha con el formato correcto.");
+            return;
+        }
+
         addTask(text, priority, date, time);
         setOpenModal(false);
     }
